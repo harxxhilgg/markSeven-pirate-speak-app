@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+
+:root {
+    --header-background: #231f20; 
+    --footer-background: #231f20; 
+    --body-background: #ffe13a;
+    --text-color: #231f20;
+    --default-red: #db1c2f;
+    --header-text-color: #FFD700;
+    --footer-text-color: #FFD700;
+}
+
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'New Rocker', cursive;
+}
+
+body {
+    background: var(--body-background);
+    color: var(--text-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: var(--header-background);
+    color: var(--header-text-color);
+    height: 150px;
+    display: grid;
+    place-items: center;
+    font-size: 30px;
+    user-select: none;
+}
+
+textarea {
+    display: block;
+    margin: 2rem auto 0 auto;
+    height: 250px;
+    width: 80%;
+    font-size: 25px;
+    resize: none;
+    outline: none;
+    border: 2px solid var(--text-color);
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+button {
+    display: block;
+    cursor: pointer;
+    margin: 0.5rem auto;
+    padding: 8px 23px;
+    outline: none; 
+    border: 1px solid var(--text-color); 
+    border-radius: 10px;
+    font-size: 24px;
+    user-select: none;
+    background: var(--text-color);
+    color: var(--header-text-color);
+}
+
+section {
+    background: #FFFF;
+    height: 250px;
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    outline: none;
+    border: 2px solid var(--text-color);
+    border-radius: 10px;
+    padding: 1rem;
+    font-size: 25px;
+    display: grid;
+    place-items: center;
+}
+
+
+
+footer { 
+    background: var(--footer-background);
+    color: var(--footer-text-color);
+    margin-top: auto;
+    padding: 3rem 3rem 2rem 3rem;
+    text-align: center;
+}
+
+footer p {
+    font-size: 25px;
+}
+
+footer ul {
+    user-select: none;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 0.5rem;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: var(--footer-text-color);
+    font-size: 20px;
+}
+
+footer span { 
+    user-select: none;
+    font-size: 35px;
+}
+
+footer ul li a:hover {
+    background: #FFFF;
+    padding: 5px 10px;
+    transition: 300ms;
+    border-radius: 10px;
+    color: var(--text-color)
+}
+
+footer > *::selection {
+    color: var(--text-color);
+    background: var(--footer-text-color);
+}
+
+button:hover { 
+    color: var(--text-color); 
+    background: #FFFF;
+    transition: 300ms;
+    outline: 1.2px solid var(--text-color);
+}
