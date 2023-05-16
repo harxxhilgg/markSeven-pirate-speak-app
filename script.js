@@ -8,7 +8,7 @@ function getTranslationURL(text) {
 }
 
 function errorHandler(error) {
-    alert("something broke!");
+    alert("something broke!, try again later.");
 }
 
 button.addEventListener("click", () => {
